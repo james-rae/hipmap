@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=yes">
+    <title>From High Up Above - A Tragically Hip Map</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.19/esri/css/esri.css">
+    <link rel="stylesheet" href="hipmap.css">
+    <script src="http://js.arcgis.com/3.19/"></script>
+    <script>
+        // give bad news to bad browsers
+        function isIE() { 
+            return ((navigator.appName === 'Microsoft Internet Explorer') ||
+                ((navigator.appName === 'Netscape') && (new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) !== null))); 
+        }
+
+        if (isIE()) {
+            // you deserve an alert box
+            alert( 'Sorry, friend! This is an outdated browser and the site will not run on it.\nPlease try a modern browser (e.g. Chrome, Firefox, Safari, Opera, Edge)' );
+        }
+    </script>
+    <script>
+        require([
+            "esri/map",
+            "esri/layers/FeatureLayer",
+            "esri/geometry/Extent",
+            "esri/InfoTemplate",
+            "esri/dijit/InfoWindowLite",
+            "dojo/dom-construct",
+            "dojo/text!./points.json",
+            "dojo/domReady!"
+        ], function (
+            Map,
+            FeatureLayer,
+            Extent,
+            InfoTemplate,
+            InfoWindowLite,
+            domConstruct,
+            pointsText
+        ) {
+            // http://localhost:6003/hipmap.html
+
+            const fields = ['subject', 'lyric', 'song', 'gnotes', 'albumkey'];
+            const albums = {
+                tth: 'The Tragically Hip',
+                uth: 'Up To Here',
+                ra: 'Road Apples',
+                fc: 'Fully Completely',
+                dfn: 'Day For Night',
+                tathh: 'Trouble At The Henhouse',
+                pp: 'Phantom Power',
+                maw: 'Music@Work',
+                ivl: 'In Violet Light',
+                ibe: 'In Between Evolution',
+                wc: 'World Container',
+                wats: 'We Are The Same',
+                nfpa: 'Now For Plan A',
+                mmp: 'Man Machine Poem'
+            };
+
+            // structure for local feature layer
+            const layerGuts = {
+                layerDefinition: {
+                    fields: [
+                        {
+                            name: "OBJECTID",
+                            type: "esriFieldTypeOID"
+                        }
+                    ],
+                    "objectIdField": "OBJECTID",
+                    "drawingInfo": {
+                        "geometryType": "esriGeometryPoint",
+                        "renderer": {
+                            "type": "uniqueValue",
+                            "field1": "albumkey",
+                            "uniqueValueInfos": []
+                        }
+                    }
+                },
+                featureSet : {
+                    geometryType: 'esriGeometryPoint',
+                    features: []
+                }
+            }
+
+            // fill in fields
+            fields.forEach(f => {
+                layerGuts.layerDefinition.fields.push({
+                    name: f,
+                    type: 'esriFieldTypeString'
+                });
+            });
+
+            // fill in renderer for each album
+            Object.keys(albums).forEach(a => {
+                layerGuts.layerDefinition.drawingInfo.renderer.uniqueValueInfos.push({
+                    value: a,
+                    label: albums[a],
+                    symbol: {
+                        url: `img/${a}_s.jpg`,
+                        contentType: 'image/jpeg',
+                        height: 32,
+                        width: 32,
+                        type: 'esriPMS'
+                    }
+                });
+            });
+
+            // not used
+            const makeLink = (text, url) => {
+                let link = '';
+                if (text && url) {
+                    const openB = text.indexOf('[');
+                    const closeB = text.indexOf(']');
+                    link = text.substring(0, openB) + '<a href="' + url + '" target="_blank">' +
+                        text.substring(openB + 1, closeB) + '</a>' + text.substring(closeB + 1);
+                }
+                return link;
+            }
+
+            // translate point data into features
+            const pointsJson = JSON.parse(pointsText);
+            pointsJson.forEach((pTxt, idx) => {
+                // string order:  lat, long, albumkey, subject, song, lyric, notes
+                const data = pTxt.split('~');
+                layerGuts.featureSet.features.push({
+                    attributes: {
+                        OBJECTID: idx,
+                        lyric: data[5],
+                        song: data[4],
+                        gnotes: data[6],
+                        // link: makeLink(data[7], data[8]),
+                        albumkey: data[2],
+                        subject: data[3]
+                    },
+                    geometry: {
+                        x: parseFloat(data[1]),
+                        y: parseFloat(data[0]),
+                        type: 'point',
+                        spatialReference: {
+                            wkid: 4326
+                        }
+                    }
+                });
+            });
+
+            // correct first oid from 0 to one higher than the last item
+            layerGuts.featureSet.features[0].attributes.OBJECTID = pointsJson.length;
+
+            // initial view
+            const initExtent = new Extent({
+                xmin: -16612898,
+                ymin: -6018564,
+                xmax: 16828607,
+                ymax: 10565213,
+                spatialReference: {
+                    wkid: 102100,
+                    latestWkid: 3857
+                }
+            });
+
+            // basemap keys
+            // https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
+
+            // maketh the map
+            const map = new Map("map", {
+                extent: initExtent,
+                basemap: 'national-geographic'
+            });
+
+            // set up info window style and template
+            const iwl =  new InfoWindowLite(null, domConstruct.create("div", null, null, map.root));
+            iwl.startup();
+            map.setInfoWindow(iwl);
+            map.infoWindow.resize(350, 270);
+
+            const infoTemp = new InfoTemplate();
+            infoTemp.setTitle("${subject}");
+            infoTemp.setContent("<div><p><img src='img/${albumkey}_m.jpg' class='infoImg' />" +
+                        "<i>${lyric}</i> - ${song}</p></div>" +
+                        "<div style='clear:both'><br/>${gnotes}.</div>");
+                        // <br/><br/>${link}
+
+            // make a map layer
+			const hipLayer = new FeatureLayer(layerGuts, {
+			  outFields: ["*"],
+              infoTemplate: infoTemp
+			});
+
+			map.addLayer(hipLayer, 0);
+
+        });
+
+        // show/hide the about box
+        function aboutClick() {
+            document.getElementById("about").style.visibility = "visible";
+        }
+        function aboutClose() {
+            document.getElementById("about").style.visibility = "hidden";
+        }
+    </script>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="info">
+      <img src="img/title.jpg"  /><br />
+      <span id="openAbout" onclick="aboutClick()">About This Map</span>
+    </div>
+    <div id="about">
+        <span id="closeAbout" onclick="aboutClose()">[X] Done And Done</span>
+        <br />
+        <p>All lyrics by <a href="http://www.thehip.com/" target="_blank">The Tragically Hip</a>, in case you weren't sure.</p>
+        <p>A huge thanks to <a href="http://www.hipmuseum.com/" target="_blank">A Museum After Dark</a> for saving me from doing a huge pile of research.</p>
+        <p>For a much nicer map with fewer points (and they also grabbed the better site name), check out <a href="http://www.cbc.ca/news2/interactives/tragicallyhip/" target="_blank">Looking For A Place To Happen</a>.</p>
+        <p>Map built with the <a href="https://developers.arcgis.com/javascript/3/" target="_blank">ESRI Javascript API</a>.</p>
+        <p>Steal the source code on <a href="https://github.com/james-rae/hipmap" target="_blank">Github</a>.</p>
+        <p>[So Hard] Done By J. Rae, Summer 2016.</p>
+        <p>Want to help Fight brain cancer? Donate <a href="https://donate.sunnybrook.ca/braincancerresearch" target="_blank">here</a>.</p>
+    </div>
+</body>
+</html>

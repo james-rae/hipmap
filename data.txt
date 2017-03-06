@@ -1,0 +1,90 @@
+Lat	Long	albumkey	 subject	 song	 lyric	 notes
+45.8591	-77.7785	maw	Algonquin Park	Lake Fever	Want to be your wheezing screen door / Want to be your stars of Algonquin	You can thank glaciers for all the lakes
+46.0331	-78.6294	maw	Algonquin Park	The Bear	I think it was Algonquin Park / It was so cold and winter-dark	The oldest provincial park in Canada
+-77.4135	-106.4082	pp	Antarctica	Chagrin Falls	Where to now? If I had to guess / I'm afraid to say Antarctica's next	"Lake Vostok, hidden under the ice, is the size of Lake Ontario"
+-65.9521	52.6898	pp	Antarctica	Emperor Penguin	In a spartan Antarctican walk for many days	An Emperor Penguin can walk up to 110 km to breed
+41.8187	12.558	maw	Appian Way	Puttin' Down	United state of ricochet / From the boardwalk to the Appian way	A historic road from the Roman Republic
+52.924	-82.4289	nfpa	Attawapiskat	Goodnight Attawapiskat	Attawapiskat / City by the Bay	'People of the parting of the rocks'
+-22.2053	150.0385	maw	Australia	Sharks	Sharks don't attack the Irish / It's mostly Australians	The Land Down Under
+47.6562	-117.4245	dfn	Baby Bar	Emergency	We're sitting in the Baby Bar bereft / At a shadowy table out past the sentences end	"A bar in Spokane, WA. Just maybe the same bar the song is referring to"
+52.5197	13.3408	maw	Berlin	Sharks	When the sharks finished the Irish / And those people from Berlin	The front line of the Cold War
+52.52	13.4049	fc	Berlin	El Dorado	Just the mention of Berlin makes me sexy	"During the Weimar Republic, Berlin was indeed a decadent place"
+51.5006	-0.1244	ivl	Big Ben	Silver Jet	It's quiet again / When a car like Big Ben	"Big Ben is the name of the bell, not the clock or the tower"
+49.9581	-80.9499	fc	Bill Barilko	Fifty Mission Cap	Bill Barilko disappeared that summer / He was on a fishing trip	This is roughly where the plane was found 11 years after the crash
+44.5414	-78.5438	pp	Bobcaygeon	Bobcaygeon	It was in Bobcaygeon I saw the constellations / Reveal themselves on star at a time	The Hub of the Kawarthas
+42.8844	-78.8634	fc	Buffalo	At The Hundredth Meridian	I remember Buffalo / And I remember Hengelo	Birthplace of the Buffalo wing
+51.1023	-114.1337	nfpa	Calgary	Take Forever	"He breaks down, when I broke down / I always thought I'd go to Calgary"	Cowtown
+54.18	-73.75	ibe	Canada	Summer's Killing Us	Til you say 'Canada lost. Go home.'	Land of Maple Syrup
+58.43	-110.13	wc	Canada	Last Night I Dreamed You Didn't Love Me	"Oh, Canada emptied, there was me / Featureless and freezing"	The Great White North
+47.517	-52.6325	ivl	Cape Spear	Silver Jet	Silver jet / Clayqout Sound to Cape Spear	The eastern-most edge of Canada
+40.7678	-73.9717	ibe	Central Park Zoo	"Gus, The Polar Bear From Central Park"	[Song Title]	Gus was the first zoo animal to be treated with Prozac
+41.4305	-81.3902	pp	Chagrin Falls	Chagrin Falls	"Or Chagrin Falls, Ohio / Where the unknown won't even go"	The town setting helped inspire the comic Calvin and Hobbes
+41.8758	-87.6793	wats	Chicago	The Depression Suite	Under the pillow / I bury my head and try and shut Chicago out 	The Windy City
+43.6651	-79.4205	pp	Christie Pits	Bobcaygeon	In the middle of that riot / Couldn't get you off my mind	Nazi and Jewish groups clashed at Christie Pits in the 1930s
+58.7685	-94.1669	pp	Churchill	Thompson Girl	Thompson Girl walking from Churchill / Across the icy world with polar bears it's mostly uphill	The Polar Bear Capital of the World
+49.1626	-125.9248	ivl	Clayoquot Sound	Silver Jet	Silver jet / Clayqout Sound to Cape Spear	Site of large protests against clearcut logging in 1993
+41.5084	-81.6948	wc	Cleveland	World Container	"Good News! You get to vanish / Go to Cleveland, be an indie smash"	The Forest City
+55.6759	12.5754	ibe	Copenhagen	One Night In Copenhagen	Quits you at a payphone in the snow / One night in Copenhagen	The city aims to be carbon-neutral by 2025
+31.7632	-106.4663	dfn	El Paso	Yawning Or Snarling	One day in El Paso / The cops go into the crowd	The Six Shooter Capitol
+43.6671	-79.5423	ivl	Etobicoke	Ultra Mundane	"It's time to make ya inside with a wristband, alright / To see Etobicoke coyotes"	Place where the alders grow
+-22.945	-135.2783	ivl	Gambier Islands	The Dire Wolf	Yawnin' shores / Gambier-bleached / In tomorrow's thorough light	
+25.6511	85.065	maw	Ganges River	My Music At Work	"Determining where you are / In a sink full of Ganges, I remain"	
+51.3006	-116.9496	ra	Golden Rim Motor Inn	The Luxury	The Golden Rim Motor Inn / Soft water and a colour TV	It's now a Days Inn
+44.2859	-76.9436	dfn	Goodyear	Titanic Terrarium	His great grandfather worked for Goodyear / He'd see the blimp on Sunday's	The Napanee Goodyear plant is a major employer in the Kingston area
+24.9688	-90.6877	wats	Gulf Of Mexico	The Depression Suite	I move through huge rooms with no windows  / And no Gulf of Mexico	The Grand Canyon under the sea
+45.2898	-75.8698	dfn	Hazeldean	Greasy Jungle	I drove down your road / To Hazeldean where I tasted / Your funeral home's / sandwiches and coffee	"Kelly Funeral Home is located in Hazeldean, Kanata"
+52.2574	6.7627	fc	Hengelo	At The Hundredth Meridian	I remember Buffalo / And I remember Hengelo	The Hip got lost trying to find the Metropool in Hengelo. They were right fermented when they finally got there
+32.8292	76.8635	pp	Himalayas	Poets	Those Himalayas of the mind	More analogy taken at word
+44.2841	-76.7173	dfn	Hiway 401	Titanic Terrarium	There's a trace o mint wafting in from the north / So we don't fuck with the 401	Good advice right there.  It's a mess in bad weather
+43.649	-79.3929	pp	Horseshoe Tavern	Bobcaygeon	That night in Toronto with its checkerboard floors	The Horseshoe has checkerboard tile floors
+53.0104	-9.0305	maw	Ireland	Sharks	Sharks don't attack the Irish / It's mostly Australians	This is an important location in Ireland
+47.5874	-58.9745	ivl	Isle Aux Morts	The Dire Wolf	In that September off / Isle aux Morts 	Island of the Dead
+44.2314	-76.4863	tth	Kingston	Small Town Bringdown	You're a top ten kingpin in the borders of your hometown	The Hip's hometown
+55.752	37.6165	pp	Kremlin	Fireworks	Crisis of faith and crisis in the Kremlin / And yeah we'd heard all that before	The Fortress Inside a City
+43.076	-89.3767	tathh	Kurt Cobain	Don't Wake Daddy	"Kurt Cobain, reinacrnated, sighs and licks is face"	This location is the bar where Nirvana opened for the Hip due to a double booking
+45.0355	-72.2548	ivl	Lake Memphemagog	Problem Bears	Writing a song about Lake Memphremagog	'Where there is a big expanse of water'
+43.7262	-77.6926	maw	Lake Ontario	Lake Fever	I'll tell you a story about the lake fever	A cholera epidemic hit along the shores of Lake Ontario in 1832
+44.3344	-75.9992	tth	Last American Exit	Last American Exit	I'm on the last American exit to the Northland	"This would be the last exit to Kingston"
+34.0208	-118.2222	nfpa	Los Angeles	Now For Plan A	I'll stay till the wisteria fades / And falls on L.A.	The City of Angels
+55.7182	37.5491	pp	Luzhniki Arena	Fireworks	If there's a goal that everyone remembers / It was back in ol '72	Where Game 8 of the Summit Series was played
+17.7755	142.5839	maw	Mariana Trench	Sharks	From the Moon down to the surface of the Mariana's Trench	About as deep as you can get
+44.1959	-76.7512	uth	Millhaven Institution	38 Years Old	Twelve men broke loose in Seventy-Three / From Millhaven maximum security	The actual jailbreak that inspired the song was 14 inmates in 1972. The year was changed to make things rhyme
+46.2666	-93.7727	ibe	Minnesota	If New Orleans Is Beat	Here where the Mississippi quits / Where its still got a bit of Minnesota in it	"The Land of 10,000 Lakes"
+29.3889	-89.2124	ibe	Mississippi River	If New Orleans Is Beat	Here where the Mississippi quits / Where its still got a bit of Minnesota in it	Old Man River. The longest in North America
+46.6299	-53.1716	wc	Mistaken Point	Fly	"There's Mistaken Point, Newfoundland / There's Moonbeam Ontario"	"Sailors would mistake this for Cape Rice in the fog, to their peril"
+49.343	-82.1542	wc	Moonbeam	Fly	"There's Mistaken Point, Newfoundland / There's Moonbeam Ontario"	Pioneers claimed to have seen flashing lights falling from the sky here
+27.9858	86.9235	tathh	Mount Everest	Sherpa	We were high / We were sherpa high	"Mount Everest is high, and there's a good chance you'll find Sherpas there"
+40.821	14.4272	maw	Mount Vesuvius	Toronto #4	Did you know you were the rock plug for all of us / Did you know in the conduit of Vesuvius	It destroyed a lot of stuff in AD 79
+36.1597	-86.7794	ibe	Nashville	It Can't Be Nashville Every Night	Stares into the blur of the tuner lights / It can't be Nashville every night	"Music City, U.S.A"
+52.72	-123.35	ibe	New Caledonia	Are We Family	The lost to the recovered? / The New Caledonian crow to the chimpanzee?	Better known these days as British Columbia
+29.9424	-90.0679	wats	New Orleans	The Depression Suite	Working in the new NewOrleansWorld	The Big Easy
+29.9758	-90.0413	ibe	New Orleans	If New Orleans Is Beat	If New Orleans is beat / Where's that leave you and me?	The Crescent City
+30.0038	-90.0102	uth	New Orleans	New Orleans Is Sinking	"New Orleans is sinking, man, and I don't wanna swim"	The song wasn't played much during the aftermath of Hurricane Katrina
+40.7127	-74.0059	tathh	New York	Flamenco	"Maybe I'll go to New York / I'll drag you there / You said, 'no one drags me anywhere'"	"In the early 1800's, pigs roamed the streets feasting on trash"
+40.7133	-73.8444	pp	New York	Escape Is At Hand For The Travelling Man	It was our third time in New York / It was your fourth time in New York	The Big Apple
+48.62	-56.03	ivl	Newfoundland	The Dire Wolf	At the Dire Wolf's crest / The Newfoundland paused	May be referring to the breed of dog
+43.0772	-79.0752	dfn	Niagara Falls	Daredevil	Do you like it inside a barrel / plunging over the falls?	Annie Edison Taylor was the first to ride down the falls in a barrel in 1901
+43.521	-76.4043	wats	Nine Mile Point Nuclear Station	Morning Moon	"The reactor's down, I guess for Labour Day / Today's the first day I ain't seen / The great plume of steam from across the lake"	Poetry
+54.975	-2.1052	ivl	Northumberland	Silver Jet	As if the Wolves of Northumberland themselves / Were rumoured to be en route 	"A millennium ago, Northumberland was known for its high wolf population"
+39.3058	-75.1665	maw	Philadelphia	The Bastard	"Then you turned all Billy Sunday, shoutin' / Philadelphia for Christ and Christ for Philadelphia"	The Cradle of Liberty
+44.0073	-77.1408	tth	Regent Theatre	All Canadian Surf Club	Well there's a rockin' little spot next to the Regent Theatre	"This Regent Theatre is close to Sandbanks Provincial Park, known for sandbar waves"
+39.524	-119.7467	tth	Reno	Small Town Bringdown	Been to Reno / Drives an El Camino	The Biggest Little City in the World
+51.7276	36.1923	dfn	Russia	Scared	You're in Russia and more than a million works of art / Are whisked out to the woods / So when the Nazi's find the whole place dark / They'd think God's left the museum for good	Whether this happened or not seems to fall under WW2 legend. This location is Kursk museum
+42.974	-82.4052	mmp	Sarnia	In Sarnia	"In my blood / Sarnia, you've been on my mind"	The Imperial City
+52.1361	-106.6473	fc	Saskatoon	Wheat Kings	Sundown in the Paris of the Praries / Wheat kings have all their treasures buried	David Milgaard was wrongly imprisoned for a Saskatoon murder
+46.5251	-84.301615	ra	Sault Ste. Marie	Born In The Water	Smart as trees in Sault Ste. Marie	The Soo
+-2.33	34.83	tathh	Serengeti	Don't Wake Daddy	Then they drift past strips of Serengeti / And the gates of Sleepy Hollow too	The Maa word Serengit means Endless Plains
+43.5675	-80.2695	wats	Speed River	Speed River	Speed River take me away	
+44.2505	-76.9452	dfn	Springside Park	An Inch An Hour	Tonight the winter may have missed its mark / You can see your breath in Springside Park / Coffee coloured ice and peeling birch bark / Sound of rushing water in the dark	My favourite Hip lyric. Perfectly describes the Napanee park in winter
+47.2693	-122.525	ibe	Tacoma Narrows Bridge	Vaccination Scar	It went down like a bad card table / Like the Tacoma Narrows Bridge	"Part bridge, part amusement ride"
+48.4845	-89.168	dfn	Terry Fox	Inevitability Of Death	Terry's gift is for ever green	"Terry Fox memorial, near where he was forced to end his run across Canada"
+48.15	-16.1166	dfn	The Bismarck	Nautical Disaster	"One afternoon, four thousand men died in the water here / and five hundred more were thrashing madly / as parasites might in your blood"	Was sunk in retaliation to the Battle of Denmark Strait
+36.1098	-112.1945	tathh	The Grand Canyon	Gift Shop	And after a glimpse / Over the top / The rest of the world / Becomes a gift shop	Home of pink rattlesnakes
+51	-100	fc	The Hundredth Meridian	At The Hundredth Meridian	At the hundredth meridian / Where the great planes begin	
+41.7255	-49.9469	dfn	The Titanic	Titanic Terrarium	My great grandfather was a welder / He helped to build the Titanic / He certainly didn't think / That it was unsinkable	This is where the Titanic met its doom
+55.7438	-97.8539	pp	Thompson	Thompson Girl	"Looks like Christmas at 55 degrees / This latitude weakens my knees, Thompson girl"	The Hub of the North
+45.5543	-78.6993	ra	Tom Thompson	Three Pistols	Tom Thompson came paddling past / I'm pretty sure it was him	Tom Thompson went missing on Canoe Lake
+43.6714	-79.4085	maw	Toronto	Toronto #4	[Song Title]	Hogtown
+43.6875	-79.3661	wats	Toronto	Queen Of The Furrows	"'Win Toronto', yelled the Queen of the Furrows / This is how we farm, hens cluck and roosters crow "	The Big Smoke
+43.6223	-79.3784	wats	Toronto Island	The Last Recluse	We rode hard for the boat / Hard as we could	"A bit of a stretch on lyrics alone, but Gord mentioned the Toronto Island reference in concert"
+48.2007	16.382	tathh	Vienna	Springtime In Vienna	[Song Title]	"The City of Dreams, the City of Music"
